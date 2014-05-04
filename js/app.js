@@ -22,15 +22,18 @@ $( "#ruan" ).click(function() {
 	$("#portfolio").slideUp("slow", function() {
 		$(this).load("ruan.html #portfolio > *", function() {
 			$(this).slideDown("slow");
+			$(window).scrollTop(0);
 		});
 	});
 });
+
 
 //Energyficient
 $( "#energyficient" ).click(function() {
 	$("#portfolio").slideUp("slow", function() {
 		$(this).load("energy.html #portfolio > *", function() {
 			$(this).slideDown("slow");
+			$(window).scrollTop(0);
 		});
 	});
 });
