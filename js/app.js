@@ -19,18 +19,15 @@ $containter.imagesLoaded( function(){
 
 
 var colors = ['home', 'ruan-color', 'energy-color', 'dca-color', 'isu-color'];
-function setValue()
-{
-    window.keyColor = 'home';
-}
+
 
 var color = function(id) {
 	for ( var i = 0; i < colors.length; i++ )
 	{
         if ( $(id).hasClass( colors[i] ) )
       {
-        window.keyColor = colors[i];
-        return window.keyColor;
+        var keyColor = colors[i];
+        return keyColor;
       }
 	}
 };
@@ -38,21 +35,19 @@ var color = function(id) {
 
 
 var assignColor = function(newCol) {
-	$( "#page" ).removeClass(window.keyColor);
-	$( "#page" ).addClass(newCol);
-	$(document.body).removeClass(window.keyColor);
+	var removeColor = color(document.body);
+	$(document.body).removeClass(removeColor);
 	$(document.body).addClass(newCol);
-	$( "#container" ).removeClass(window.keyColor);
+	$( "#container" ).removeClass(removeColor);
 	$( "#container" ).addClass(newCol);
 };
 
 // RUAN
 $( "#ruan" ).click(function() {
-	alert(color("#page"));
 	newColor = "ruan-color";
 	$( "#portfolio" ).load("ruan.html #portfolio > *");
-	if (color( "#page" ) != "ruan-color") {
-		assignColor(newColor, "#page");
+	if (color(document.body) != "ruan-color") {
+		assignColor(newColor);
         $(window).scrollTop(0);
 	}
     else {
@@ -64,8 +59,8 @@ $( "#ruan" ).click(function() {
 $( "#isu" ).click(function() {
     newColor = "isu-color";
 	$( "#portfolio" ).load("isu.html #portfolio > *");
-	if (color( "#page" ) != "isu-color") {
-		assignColor(newColor, "#page");
+	if (color(document.body) != "isu-color") {
+		assignColor(newColor);
         $(window).scrollTop(0);
 	}
     else {
@@ -78,8 +73,8 @@ $( "#isu" ).click(function() {
 $( "#energyficient" ).click(function() {
 	newColor = "energy-color";
 	$( "#portfolio" ).load("energy.html #portfolio > *");
-	if (color( "#page" ) != "energy-color") {
-		assignColor(newColor, "#page");
+	if (color(document.body) != "energy-color") {
+		assignColor(newColor);
         $(window).scrollTop(0);
 	}
     else {
@@ -91,8 +86,8 @@ $( "#energyficient" ).click(function() {
 $( "#dca" ).click(function() {
 	newColor = "dca-color";
 	$( "#portfolio" ).load("dca.html #portfolio > *");
-	if (color( "#page" ) != "dca-color") {
-		assignColor(newColor, "#page");
+	if (color(document.body) != "dca-color") {
+		assignColor(newColor);
         $(window).scrollTop(0);
 	}
     else {
