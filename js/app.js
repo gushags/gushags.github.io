@@ -43,6 +43,7 @@ $( "#dca" ).click(function() {
 	$("#portfolio").slideUp("slow", function() {
 		$(this).load("dca.html #portfolio > *", function() {
 			$(this).slideDown("slow");
+			$(window).scrollTop(0);
 		});
 	});
 });
@@ -52,6 +53,7 @@ $( "#isu" ).click(function() {
 	$("#portfolio").slideUp("slow", function() {
 		$(this).load("isu.html #portfolio > *", function() {
 			$(this).slideDown("slow");
+			$(window).scrollTop(0);
 		});
 	});
 });
