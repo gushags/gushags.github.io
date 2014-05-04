@@ -19,41 +19,21 @@ $containter.imagesLoaded( function(){
 
 // RUAN
 $( "#ruan" ).click(function() {
-	$("#portfolio").slideUp("slow", function() {
-		$(this).load("ruan.html #portfolio > *", function() {
-			$(this).slideDown("slow");
-			$(window).scrollTop(0);
-		});
-	});
+	$("#portfolio").load("ruan.html #portfolio > *",);
 });
-
+	
 
 //Energyficient
 $( "#energyficient" ).click(function() {
-	$("#portfolio").slideUp("slow", function() {
-		$(this).load("energy.html #portfolio > *", function() {
-			$(this).slideDown("slow");
-			$(window).scrollTop(0);
-		});
-	});
+	$("#portfolio").load("energy.html #portfolio > *");
 });
 
 // DCA
 $( "#dca" ).click(function() {
-	$("#portfolio").slideUp("slow", function() {
-		$(this).load("dca.html #portfolio > *", function() {
-			$(this).slideDown("slow");
-			$(window).scrollTop(0);
-		});
-	});
+	$("#portfolio").load("dca.html #portfolio > *");
 });
 
 // ISU
 $( "#isu" ).click(function() {
-	$("#portfolio").slideUp("slow", function() {
-		$(this).load("isu.html #portfolio > *", function() {
-			$(this).slideDown("slow");
-			$(window).scrollTop(0);
-		});
-	});
+	$("#portfolio").load("isu.html #portfolio > *");
 });
