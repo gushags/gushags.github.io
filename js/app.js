@@ -87,9 +87,13 @@ var assignColor = function(newCol) {
 $('.book').click(function(){
     var id = this.id;
 	var newColor = id + "-color";
-	$( "#portfolio" ).load(id + ".html", function(){
-		$(document).foundation('orbit').init;
-	});
+	
+	// Commenting this out because I think I may want to 
+	// have this event happen off of an expanded element instead
+	
+	// $( "#portfolio" ).load(id + ".html", function(){
+// 		$(document).foundation('orbit').init;
+// 	});
 	if (color(document.body) != newColor) {
 		assignColor(newColor);
         $(window).scrollTop(0);
