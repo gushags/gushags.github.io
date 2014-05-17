@@ -14,11 +14,17 @@ $(document).foundation();
 // 	});	
 // });
 
+
 $( function() {
 
   var $container = $('#container').masonry({
     itemSelector: '.box',
     columnWidth: 190
+  });
+  
+  $container.on( 'click', '.box-content', function() {
+      $( this ).parent('.box').toggleClass('is-expanded');
+      $container.masonry();
   });
     
   // reveal initial images
