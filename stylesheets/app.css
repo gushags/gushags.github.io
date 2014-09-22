@@ -5009,49 +5009,66 @@ input:focus::-moz-placeholder {
 }
 
 /* FF 19+ */
+/* line 404, ../scss/app.scss */
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
 /* line 405, ../scss/app.scss */
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 4-18 */
+/* line 406, ../scss/app.scss */
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 19+ */
+/* line 410, ../scss/app.scss */
 #thank-button {
   margin-top: 1rem;
 }
 
-/* line 409, ../scss/app.scss */
+/* line 414, ../scss/app.scss */
 .light-orange h5 {
   color: #f6d7b7;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
 
-/* line 415, ../scss/app.scss */
+/* line 420, ../scss/app.scss */
 .light-orange h6 {
   color: #f6d7b7;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 420, ../scss/app.scss */
+  /* line 425, ../scss/app.scss */
   #footer img {
     width: 24rem;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 426, ../scss/app.scss */
+  /* line 431, ../scss/app.scss */
   #footer img {
     width: 40rem;
   }
 }
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  /* line 432, ../scss/app.scss */
+  /* line 437, ../scss/app.scss */
   #footer img {
     width: 62rem;
   }
 }
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
-  /* line 438, ../scss/app.scss */
+  /* line 443, ../scss/app.scss */
   #footer img {
     width: 90rem;
   }
 }
 @media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
-  /* line 444, ../scss/app.scss */
+  /* line 449, ../scss/app.scss */
   #footer img {
     width: 115rem;
   }
