@@ -5106,7 +5106,7 @@ textarea:focus::-ms-placeholder {
 @media only screen and (max-width: 40em) {
   /* line 478, ../scss/app.scss */
   #footer img {
-    width: 24rem;
+    width: 20rem;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
