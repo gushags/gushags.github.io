@@ -3,74 +3,289 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/app.css" />
-    <script src="bower_components/modernizr/modernizr.js" type="text/javascript" charset="utf-8"></script>
-</head>
- 
-<body>
-  
-    <div class="row">
-		<div class="large-12 columns">
-			<h2>This is a test</h2>
+    <title>Zephre - Unexpected advertising</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+	<link href='http://fonts.googleapis.com/css?family=Syncopate:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="bower_components/stickyNavbar.js/animate.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+	  
+<!--Splash Page / Home Page -->
+	<div id="home-page">
+		<div class="row">
+			<div class="large-12 columns">
+				<span>
+					<a href="http://twitter.com/jhagkull"><img id="twit" class="soc hide-initial" src="img/twitter.png" width="60" height="60" alt="Twitter"></a>
+					<a href="http://facebook.com/jhagkull"><img id="face" class="soc hide-initial" src="img/facebook.png" width="60" height="60" alt="Facebook"></a>
+				</span>
+			</div>
 		</div>
-		<hr />
-    </div>
-	<div id="portfolio"></div>
+		<img id="logo" class="show-for-medium-up" src="img/zephre.svg">
+		<img id="tagline" class="show-for-small-up hide-initial" src="img/unexpected.svg" alt="Unexpected" >
+		<img id="logo" class="hide-for-medium-up" src="img/zephre.svg" width="260px">
+		<div id="icon-scroll-down" class="hide-initial">
+			<div class="hide-for-large-up icon-scroll position animate floating"></div>
+		</div>
+		<div class="row ninety"></div>
+		<div class="row fullWidth">
+			<div id="header" class="orange large-12 medium-12 text-center columns header show-for-large-up">
+				<nav id="nav">
+					<div class="large-2 medium-2 columns text-left">
+						<ul class="nav navbar show-for-large-up">
+							<li><a href="#home-page"><img id="small-logo" class="hide" src="img/z_logo.svg"></a></li>
+						</ul>
+					</div>
+					<div class="large-8 medium-8 columns end">
+						<ul id="nav-buttons" class="nav navbar-nav show-for-large-up hide-initial">
+							<li><a href="#about-page" class="button round">About</a></li>
+							<li><a href="#experience-page" class="button round">Experience</a></li>
+							<li><a href="#portfolio-page" class="button round">Work</a></li>
+							<li><a href="#contact-page" class="button round">Contact Us</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	
+<!--About Page -->
+	<div id="about-page" class="scrollto">
+		<div class="row">
+			<div class="small-11 large-12 small-centered large-uncentered columns">
+				<h1>An agency with that new car smell.</h1>
+			</div>
+	    </div>
+		<div class="row">
+			<div class="large-12 text-center columns">
+				<img id="zdivider" src="img/divider.png" width="200" height="53" alt="Divider">
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-11 large-12 small-centered large-uncentered columns">
+				<h2 class="intro">
+					We’re like a fresh pack of Post-Its before you snap the plastic. So let’s do this differently. Let’s be the ad agency you’ve always wanted. (Or at least, the agency we’ve always wanted to be.)
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 text-center columns">
+				<img id="zdivider2" src="img/divider.png" width="200" height="53" alt="Divider">
+			</div>
+		</div> 
+		<div class="row">
+			<div class="small-11 large-6 small-centered large-uncentered columns">
+				<h3>Hourly rate? Are we lawyers?</h3>
+				<p>The hourly rate is a terrible idea. It rewards slow work and prevents accurate budgeting. So Zephre gives you a cost per project, not ballooning estimates.</p>
+			</div>
+			<div class="small-11 large-6 small-centered large-uncentered columns">
+				<h3>Be you. It’s better that way.</h3>
+				<p>If you’re looking for some variation of “Got Plumbing?”, you’ve found the wrong agency. (And the wrong decade.) Your brand is awesome. So we let it speak its own language.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-11 large-6 small-centered large-uncentered columns">
+				<h3>Psst ... we follow the numbers.</h3>
+				<p>The best ad is not the one where a gerbil is shot out of a cannon through a fiery hoop while singing “God Bless America” in Cantonese. Because the research says a kitten is more relatable. Zephre likes research. The more we know about you, the more we know about the competition, the more we know about your customer, the farther we can shoot that kitten.</p>
+			</div>
+			<div class="small-11 large-6 small-centered large-uncentered columns">
+				<h3>Agile way isn’t just a street in Bakersfield.</h3>
+				<p>Just like the new kid at school, we get to pick our friends. So we work with ad pros who are quick, who are crazy skilled, and who can tell your brand’s story in ridiculously awesome ways. Whatever the project, we know the people who can get it done.</p>
+			</div>
+		
+		</div>
+	</div>
+
+	
+<!--Experience Page -->
+    <div id="experience-page" class="scrollto">
+		<div class="row">
+			<div class="large-12 columns">
+				<h1 class="hide-for-small-only">You know what's been great? Working with these guys.</h1>
+				<h1 class="show-for-small-only">Client Experience.</h1>
+				<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
+				  <li><img src="img/logos/dca.jpg" width="195" height="195" alt="Downtown Des Moines"></li>
+				  <li><img src="img/logos/quickstep.png" width="195" height="195" alt="Quick•Step Flooring"></li>
+				  <li><img src="img/logos/isu.png" width="195" height="195" alt="Iowa State University"></li>
+				  <li><img src="img/logos/ruan.png" width="195" height="195" alt="Ruan Transportation Company"></li>
+				  <li><img src="img/logos/mcdonalds.png" width="195" height="195" alt="McDonalds"></li>
+				  <li><img src="img/logos/coop.png" width="195" height="195" alt="CoOportunity Health"></li>
+				  <li><img src="img/logos/principal.png" width="195" height="195" alt="Principal"></li>
+				  <li><img src="img/logos/smartypig.png" width="195" height="195" alt="Smartypig"></li>
+				  <li><img src="img/logos/3m.png" width="195" height="195" alt="3M"></li>
+				  <li><img src="img/logos/scotchgard.png" width="195" height="195" alt="Scotchgard"></li>
+				  <li><img src="img/logos/jel.png" width="195" height="195" alt="Just Eliminate Lies"></li>
+				  <li><img src="img/logos/kraft.png" width="195" height="195" alt="Kraft"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+<!--Portfolio Page -->
+	<div id="portfolio-page" class="scrollto">
+		<div class="row">
+			<div class="large-12 columns">
+				<h1 class="hide-for-small-only">We have the best jobs ever. Because we get to do this.</h1>
+				<h1 class="show-for-small-only">These were fun. And effective.</h1>
+			</div>
+		</div>
+		<div class="row fullWidth">
+			<div class="outdoor-mask">
+				<img class="outdoor-img" src="img/outdoor.jpg" width="3231" height="600" alt="Downtown Des Moines">
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 columns">
+				<div id="outdoor-slider" class="dragdealer">
+					<div class="slide-text">
+						<h4>Outdoor</h4>
+					</div>
+					<div class="handle orange-bar">Drag Me</div>
+				</div>
+			</div>
+		</div>
+		<div class="row fullWidth">    <!-- TV, Video, Radio starts -->
+			<div class="tv-mask">
+				<div class="tv-img">
+					<video class="vid1" height="360" loop controls>
+						<source src="img/vid/jel_drool.webm" type="video/webm">
+						<source src="img/vid/jel_drool.mp4" type="video/mp4">
+					</video>
+					<video class="vid" height="360" loop controls>
+						<source src="img/vid/coop15.webm" type="video/webm">
+						<source src="img/vid/jel_drool.mp4" type="video/mp4">
+					</video>
+					<video class="vid" height="360" loop controls>
+						<source src="img/vid/ruan.webm" type="video/webm">
+						<source src="img/vid/jel_drool.mp4" type="video/mp4">
+					</video>
+					<video class="vid" height="360" loop controls>
+						<source src="img/vid/coop_whois.webm" type="video/webm">
+						<source src="img/vid/jel_drool.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 columns">
+				<div id="tv-slider" class="dragdealer">
+					<div class="slide-text">
+						<h4>TV, Video, Radio</h4>
+					</div>
+					<div class="handle orange-bar">Drag Me</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row fullWidth">
+			<div class="digital-mask">
+				<img class="digital-img" src="img/digital.jpg" width="3880" height="600" alt="Energyficient, ACCI, Ridnour Construction, Cylient">
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 columns">
+				<div id="digital-slider" class="dragdealer">
+					<div class="slide-text">
+						<h4>Digital</h4>
+					</div>
+					<div class="handle orange-bar">Drag Me</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="row fullWidth">
+			<div class="print-mask">
+				<img class="print-img" src="img/print.jpg" width="4223" height="600" alt="Kraft, ACCI, Ruan">
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 columns">
+				<div id="print-slider" class="dragdealer">
+					<div class="slide-text">
+						<h4>Print &amp; Collateral</h4>
+					</div>
+					<div class="handle orange-bar">Drag Me</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+<!--Contact Page -->
+	 <div id="contact-page" class="scrollto">
+		 <div class="row">
+			 <div class="large-12 small-11 small-centered columns">
+				 <h1 class="hide-for-small-only">Enough about us. Let's talk about you.</h1>
+				 <h1 class="show-for-small-only">Let's talk.</h1>
+			 </div>
+		 </div>  
 	 
-    <div class="row">
-		<div id="container" class="large-12 columns transitions-enabled large-centered clearfix"></div><!--/container -->  
+		 <!-- Simpleform contact form -->
+		  <form data-abide action="http://getsimpleform.com/messages?form_api_token=c6972e9534fbcb4ded531f27f48ec962" method="post">
+		    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+			   <div class="row">
+				   <div class="large-6 small-11 small-centered large-uncentered columns">
+					    <input type='hidden' name='redirect_to' value='http://google.com' />
+					    <!-- all your input fields here.... -->
+						<div class="names-field">
+							<label for="name">Name<small>  (required)</small>
+								<input type="text" name="name" placeholder="Janice A. Client" required/>
+							</label>
+							<small class="error">We'll need your name unless you want to be, "Hey, You!"</small>
+						</div>
+						<div class="company-field">
+							<label>Company
+								<input type="text" name="company" placeholder="Nike" />
+							</label>
+						</div>
+						<div class="phone-field">
+							<label for="phone">Phone
+								<input type="text" name="phone" placeholder="Phone number" />
+							</label>
+						</div>
+						<div class="email-field">
+							<label for="email">Email Address<small>  (required)</small>
+								<input type="email" name="email" placeholder="ilike@zeph.re" required/>
+							</label>
+							<small class="error">Hey! How about entering a valid email address? Sheesh.</small>
+						</div>
+				   </div>
+ 	  			  <div class="large-6 small-11 small-centered large-uncentered columns">
+ 	  	              <div class="message-field">
+ 						  <label for="message"><strong>How can we help?</strong>
+ 			  	              <textarea name="message" placeholder="Calling Zephre. Come in, Zephre." rows="9" required></textarea>
+ 						  </label>
+ 						  <small class="error">At a loss for words? Give us something ... anything!</small>
+ 					  </div>
+ 					  <button id="form-button" type='submit'>Shazam!</button>
+ 	  			  </div>
+			   </div>
+		  </form>
+	  </div>
+	  
+<!-- Footer -->
+	<div id="footer">
+		<div class="row">
+			<div class="large-12 columns light-orange">
+				<h5>Digital &#149; Broadcast &#149; Print &#149; Collateral &#149; Full-Service Advertising </h5>
+			</div>
+		</div>
+		<div class="row fullWidth text-center">
+			<img data-interchange="[../img/z_logo_foot_sm.svg, (default)], [../img/z_logo_lg.svg, (medium)]" />
+			<noscript>
+				<img src="img/z_logo_lg.svg" alt="letsdothis@zeph.re or (661)375-3755 in Valencia, California">
+			</noscript>
+		</div>
 	</div>
-	<div id="images">
-       	<div class="box col2 book" id="ruan">
-			<div class="box-content">
-				<img src="http://placekitten.com/225/140" />
-			</div>
-		</div>
-       	<div class="box col2 book" id="energy">
-			<div class="box-content">
-				<img src="http://placekitten.com/g/210/160" />
-			</div>
-		</div>
-       	<div class="box col2 book" id="dca">
-			<div class="box-content">
-				<img src="http://placekitten.com/310/280" />
-			</div>
-		</div>
-       	<div class="box col2 book" id="isu">
-			<div class="box-content">
-				<img src="http://placekitten.com/200/115" />
-			</div>
-		</div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/150/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/130/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/350/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/130/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/130/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/170/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/140/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/110/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/300/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/130/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/180/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/300/140/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/260/180/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/135/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/240/110/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/180/nature" /></div>
-       	<div class="box col2"><img src="http://lorempixel.com/200/150/nature" /></div>
-		<div class="box col2"><img src="http://lorempixel.com/200/120/nature" /></div>
-	</div>
-        
-<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="bower_components/foundation/js/foundation.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/masonry.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 
-
-</body>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+	<script src="bower_components/foundation/js/foundation/foundation.abide.js" type="text/javascript" charset="utf-8"></script>
+	<script src="bower_components/foundation/js/foundation/foundation.interchange.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/dragdealer.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="bower_components/stickyNavbar.js/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="bower_components/stickyNavbar.js/jquery.stickyNavbar.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js"></script>
+  </body>
 </html>

@@ -1,104 +1,129 @@
-// Foundation initialized
+// Foundation JavaScript
+// Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
 
-
-// Masonry
-
-
-// var $container = $('#container');
-// $container.imagesLoaded( function(){
-// 	$container.masonry({
-// 		itemSelector: '.box',
-// 		isAnimated: !Modernizr.csstransitions,
-// 		isFitWidth: true
-// 	});	
-// });
-
-
-$( function() {
-
-  var $container = $('#container').masonry({
-    itemSelector: '.box',
-    columnWidth: 190
-  });
-  
-  $container.on( 'click', '.box-content', function() {
-      $( this ).parent('.box').toggleClass('is-expanded');
-      $container.masonry();
-  });
-    
-  // reveal initial images
-  $container.masonryImagesReveal( $('#images').find('.box') );
+$(document).ready(function(){
+	var delay = setTimeout(function(){
+	        $("#face").removeClass("hide-initial").addClass("fade-in");
+			$("#twit").removeClass("hide-initial").addClass("fade-in");
+	        $("#tagline").removeClass("hide-initial").addClass("fade-in");
+			$("#icon-scroll-down").removeClass("hide-initial").addClass("fade-in");
+			$("#nav-buttons").removeClass("hide-initial").addClass("fade-in");
+	     }, 2000);
 });
 
-$.fn.masonryImagesReveal = function( $items ) {
-  var msnry = this.data('masonry');
-  var itemSelector = msnry.options.itemSelector;
-  // hide by default
-  $items.hide();
-  // append to container
-  this.append( $items );
-  $items.imagesLoaded().progress( function( imgLoad, image ) {
-    // get item
-    // image is imagesLoaded class, not <img>, <img> is image.img
-    var $item = $( image.img ).parents( itemSelector );
-    // un-hide item
-   $item.show();
-    // masonry does its thing
-    msnry.appended( $item );
+// StickyNavbar code
+$(function () {
+    $('.header').stickyNavbar({
+    activeClass: "active",          // Class to be added to highlight nav elements
+    sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
+    animDuration: 350,              // Duration of jQuery animation
+    startAt: 0,                     // Stick the menu at XXXpx from the top of the this() (nav container)
+    easing: "linear",               // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
+    animateCSS: false,               // AnimateCSS effect on/off
+    animateCSSRepeat: false,        // Repeat animation everytime user scrolls
+    cssAnimation: "fadeInDown",     // AnimateCSS class that will be added to selector
+    jqueryEffects: false,           // jQuery animation on/off
+    jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
+    selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
+    mobile: false,                  // If false nav will not stick under 480px width of window
+    mobileWidth: 480,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
+    zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
+    stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
+    unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
   });
-  
-  return this;
-};
-
-
-// AJAX call to display portfolio page and change colors
-
-
-var colors = ['home', 'ruan-color', 'energy-color', 'dca-color', 'isu-color'];
-
-
-var color = function(id) {
-	for ( var i = 0; i < colors.length; i++ )
-	{
-        if ( $(id).hasClass( colors[i] ) )
-      {
-        var keyColor = colors[i];
-        return keyColor;
-      }
-	}
-};
+});
 
 
 
-var assignColor = function(newCol) {
-	var removeColor = color(document.body);
-	$(document.body).removeClass(removeColor);
-	$(document.body).addClass(newCol);
-	$( "#container" ).removeClass(removeColor);
-	$( "#container" ).addClass(newCol);
-};
+// Toggle hidden small logo
+$(window).scroll(function() {    
+    var h = $(window).height() - $("#header").height();
+	var scroll = $(window).scrollTop();
 
-
-// Function that loads the correct portfolio page based on a click event
-// Remember: new colors and portfolio pages must in the form
-// page and page-color
-
-$('.book').click(function(){
-    var id = this.id;
-	var newColor = id + "-color";
-	
-	// Commenting this out because I think I may want to 
-	// have this event happen off of an expanded element instead
-	
-	// $( "#portfolio" ).load(id + ".html", function(){
-// 		$(document).foundation('orbit').init;
-// 	});
-	if (color(document.body) != newColor) {
-		assignColor(newColor);
-        $(window).scrollTop(0);
-	}
-    else {
-        $(window).scrollTop(0);
+    if (scroll >= h) {
+        //clearHeader, not clearheader - caps H
+        $("#small-logo").addClass("show").removeClass("hide");
+    } else {
+        $("#small-logo").addClass("hide").removeClass("show");
     }
-}); 
+});
+
+
+
+// Outdoor slider
+var availWidthOut = $('.outdoor-img').outerWidth() -
+                  $('.outdoor-mask').outerWidth();
+new Dragdealer('outdoor-slider', {
+  horizontal: true,
+  vertical: false,
+  xPrecision: availWidthOut,
+  animationCallback: function(x, y) {
+    $('.outdoor-img').css('margin-left', -x * availWidthOut);
+  }
+});
+
+// Digital slider
+var availWidthDig = $('.digital-img').outerWidth() -
+                  $('.digital-mask').outerWidth();
+new Dragdealer('digital-slider', {
+  horizontal: true,
+  vertical: false,
+  xPrecision: availWidthDig,
+  animationCallback: function(x, y) {
+    $('.digital-img').css('margin-left', -x * availWidthDig);
+  }
+});
+
+// TV slider
+var availWidthTV = 2610 -
+                  $('.tv-mask').outerWidth();
+new Dragdealer('tv-slider', {
+  horizontal: true,
+  vertical: false,
+  xPrecision: availWidthTV,
+  animationCallback: function(x, y) {
+    $('.tv-img').css('margin-left', -x * availWidthTV);
+  }
+});
+
+// Print and Collateral slider
+var availWidthPrint = $('.print-img').outerWidth() -
+                  $('.print-mask').outerWidth();
+new Dragdealer('print-slider', {
+  horizontal: true,
+  vertical: false,
+  xPrecision: availWidthPrint,
+  animationCallback: function(x, y) {
+    $('.print-img').css('margin-left', -x * availWidthPrint);
+  }
+});
+
+// Only play videos if visible
+var videos = document.getElementsByTagName("video");
+var fraction = 0.8;
+
+function checkScroll() {
+
+    for(var i = 0; i < videos.length; i++) {
+
+        var video = videos[i];
+
+        var y = video.offsetTop, h = video.offsetHeight,  
+            b = y + h, //bottom
+            visibleY;
+
+            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+            if (visibleY > fraction) {
+                video.play();
+            } else {
+                video.pause();
+            }
+
+    }
+
+}
+
+window.addEventListener('scroll', checkScroll, false);
+window.addEventListener('resize', checkScroll, false);
