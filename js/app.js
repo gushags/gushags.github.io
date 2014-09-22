@@ -52,27 +52,31 @@ $(window).scroll(function() {
 
 
 // Outdoor slider
-var availWidthOut = $('.outdoor-img').outerWidth() -
-                  $('.outdoor-mask').outerWidth();
-new Dragdealer('outdoor-slider', {
-  horizontal: true,
-  vertical: false,
-  xPrecision: availWidthOut,
-  animationCallback: function(x, y) {
-    $('.outdoor-img').css('margin-left', -x * availWidthOut);
-  }
+$('img.outdoor-img').load(function() {
+	var availWidthOut = $('.outdoor-img').outerWidth() -
+	                  $('.outdoor-mask').outerWidth();
+	new Dragdealer('outdoor-slider', {
+	  horizontal: true,
+	  vertical: false,
+	  xPrecision: availWidthOut,
+	  animationCallback: function(x, y) {
+	    $('.outdoor-img').css('margin-left', -x * availWidthOut);
+	  }
+	});
 });
 
 // Digital slider
-var availWidthDig = $('.digital-img').outerWidth() -
-                  $('.digital-mask').outerWidth();
-new Dragdealer('digital-slider', {
-  horizontal: true,
-  vertical: false,
-  xPrecision: availWidthDig,
-  animationCallback: function(x, y) {
-    $('.digital-img').css('margin-left', -x * availWidthDig);
-  }
+$('img.digital-img').load(function() {
+	var availWidthDig = $('.digital-img').outerWidth() -
+	                  $('.digital-mask').outerWidth();
+	new Dragdealer('digital-slider', {
+	  horizontal: true,
+	  vertical: false,
+	  xPrecision: availWidthDig,
+	  animationCallback: function(x, y) {
+	    $('.digital-img').css('margin-left', -x * availWidthDig);
+	  }
+	});
 });
 
 // TV slider
@@ -88,15 +92,18 @@ new Dragdealer('tv-slider', {
 });
 
 // Print and Collateral slider
-var availWidthPrint = $('.print-img').outerWidth() -
-                  $('.print-mask').outerWidth();
-new Dragdealer('print-slider', {
-  horizontal: true,
-  vertical: false,
-  xPrecision: availWidthPrint,
-  animationCallback: function(x, y) {
-    $('.print-img').css('margin-left', -x * availWidthPrint);
-  }
+
+$('img.print-img').load(function() {
+	var availWidthPrint = $('.print-img').outerWidth() -
+	                  $('.print-mask').outerWidth();
+	new Dragdealer('print-slider', {
+	  horizontal: true,
+	  vertical: false,
+	  xPrecision: availWidthPrint,
+	  animationCallback: function(x, y) {
+	    $('.print-img').css('margin-left', -x * availWidthPrint);
+	  }
+	});
 });
 
 // Only play videos if visible
