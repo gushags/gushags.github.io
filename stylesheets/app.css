@@ -4929,6 +4929,7 @@ h1 {
   width: 22px;
   height: 52px;
   top: auto;
+  bottom: 10%;
   left: 50%;
   margin-left: -11px;
 }
