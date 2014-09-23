@@ -4929,7 +4929,6 @@ h1 {
   width: 22px;
   height: 52px;
   top: auto;
-  bottom: 100px;
   left: 50%;
   margin-left: -11px;
 }
@@ -5111,7 +5110,7 @@ textarea:focus::-ms-placeholder {
 @media only screen and (max-width: 40em) {
   /* line 482, ../scss/app.scss */
   #footer img {
-    width: 20rem;
+    width: 18rem;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
