@@ -37,17 +37,19 @@ $(function () {
 
 
 // Toggle hidden small logo
-$(window).scroll(function() {    
-    var h = $(window).height() - $("#header").height();
-	var scroll = $(window).scrollTop();
+var w = 1124;
+if ($(window).width() >= w) {
+	$(window).scroll(function() {    
+	    var h = $(window).height() - $("#header").height();
+		var scroll = $(window).scrollTop();
 
-    if (scroll >= h) {
-        //clearHeader, not clearheader - caps H
-        $("#small-logo").addClass("show").removeClass("hide");
-    } else {
-        $("#small-logo").addClass("hide").removeClass("show");
-    }
-});
+	    if (scroll >= h) {
+	        $("#small-logo").addClass("show").removeClass("hide");
+	    } else {
+	        $("#small-logo").addClass("hide").removeClass("show");
+	    }
+	});
+};
 
 
 
