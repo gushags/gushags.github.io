@@ -55,7 +55,7 @@ html, body {
 /* line 387, ../bower_components/foundation/scss/foundation/components/_global.scss */
 html,
 body {
-  font-size: 100%;
+  font-size: 17px;
 }
 
 /* line 391, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -64,7 +64,7 @@ body {
   color: #f27244;
   padding: 0;
   margin: 0;
-  font-family: "Anaheim", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -151,10 +151,10 @@ select {
   border-width: 1px;
   display: block;
   font-weight: normal;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.17647rem;
   position: relative;
-  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
-  font-size: 1rem;
+  padding: 0.82353rem 1.41176rem 0.82353rem 0.82353rem;
+  font-size: 0.94118rem;
   transition: opacity 300ms ease-out;
   background-color: #f27244;
   border-color: #ef531b;
@@ -162,13 +162,13 @@ select {
 }
 /* line 113, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
 .alert-box .close {
-  font-size: 1.375rem;
+  font-size: 1.29412rem;
   padding: 9px 6px 4px;
   line-height: 0;
   position: absolute;
   top: 50%;
-  margin-top: -0.6875rem;
-  right: 0.25rem;
+  margin-top: -0.64706rem;
+  right: 0.23529rem;
   color: #333333;
   opacity: 0.3;
 }
@@ -223,7 +223,7 @@ select {
 [class*="block-grid-"] {
   display: block;
   padding: 0;
-  margin: 0 -0.625rem;
+  margin: 0 -0.58824rem;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
 [class*="block-grid-"]:before, [class*="block-grid-"]:after {
@@ -239,7 +239,7 @@ select {
   display: block;
   height: auto;
   float: left;
-  padding: 0 0.625rem 1.25rem;
+  padding: 0 0.58824rem 1.17647rem;
 }
 
 @media only screen {
@@ -754,21 +754,21 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Anaheim", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.17647rem;
   position: relative;
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   display: inline-block;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1.0625rem;
-  padding-left: 2rem;
-  font-size: 1rem;
+  padding-top: 0.94118rem;
+  padding-right: 1.88235rem;
+  padding-bottom: 1rem;
+  padding-left: 1.88235rem;
+  font-size: 0.94118rem;
   background-color: #f27244;
   border-color: #f38057;
   color: #FFFFFF;
@@ -854,27 +854,27 @@ button.info:hover, button.info:focus, .button.info:hover, .button.info:focus {
 }
 /* line 230, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.large, .button.large {
-  padding-top: 1.125rem;
-  padding-right: 2.25rem;
-  padding-bottom: 1.1875rem;
-  padding-left: 2.25rem;
-  font-size: 1.25rem;
+  padding-top: 1.05882rem;
+  padding-right: 2.11765rem;
+  padding-bottom: 1.11765rem;
+  padding-left: 2.11765rem;
+  font-size: 1.17647rem;
 }
 /* line 231, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.small, .button.small {
-  padding-top: 0.875rem;
-  padding-right: 1.75rem;
-  padding-bottom: 0.9375rem;
-  padding-left: 1.75rem;
-  font-size: 0.8125rem;
+  padding-top: 0.82353rem;
+  padding-right: 1.64706rem;
+  padding-bottom: 0.88235rem;
+  padding-left: 1.64706rem;
+  font-size: 0.76471rem;
 }
 /* line 232, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.tiny, .button.tiny {
-  padding-top: 0.625rem;
-  padding-right: 1.25rem;
-  padding-bottom: 0.6875rem;
-  padding-left: 1.25rem;
-  font-size: 0.6875rem;
+  padding-top: 0.58824rem;
+  padding-right: 1.17647rem;
+  padding-bottom: 0.64706rem;
+  padding-left: 1.17647rem;
+  font-size: 0.64706rem;
 }
 /* line 233, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.expand, .button.expand {
@@ -885,12 +885,12 @@ button.expand, .button.expand {
 /* line 235, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.left-align, .button.left-align {
   text-align: left;
-  text-indent: 0.75rem;
+  text-indent: 0.70588rem;
 }
 /* line 236, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.right-align, .button.right-align {
   text-align: right;
-  padding-right: 0.75rem;
+  padding-right: 0.70588rem;
 }
 /* line 238, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.radius, .button.radius {
@@ -1285,18 +1285,18 @@ button::-moz-focus-inner {
 /* Standard Forms */
 /* line 366, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 form {
-  margin: 0 0 1rem;
+  margin: 0 0 0.94118rem;
 }
 
 /* Using forms within rows, we need to set some defaults */
 /* line 86, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 form .row .row {
-  margin: 0 -0.5rem;
+  margin: 0 -0.47059rem;
 }
 /* line 88, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 form .row .row .column,
 form .row .row .columns {
-  padding: 0 0.5rem;
+  padding: 0 0.47059rem;
 }
 /* line 92, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 form .row .row.collapse {
@@ -1319,13 +1319,13 @@ form .row input.column,
 form .row input.columns,
 form .row textarea.column,
 form .row textarea.columns {
-  padding-left: 0.5rem;
+  padding-left: 0.47059rem;
 }
 
 /* Label Styles */
 /* line 372, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 label {
-  font-size: 0.875rem;
+  font-size: 0.82353rem;
   color: #4d4d4d;
   cursor: pointer;
   display: block;
@@ -1341,8 +1341,8 @@ label.right {
 }
 /* line 374, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 label.inline {
-  margin: 0 0 1rem 0;
-  padding: 0.5625rem 0;
+  margin: 0 0 0.94118rem 0;
+  padding: 0.52941rem 0;
 }
 /* line 376, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 label small {
@@ -1369,9 +1369,9 @@ select::-ms-expand {
   border-style: solid;
   border-width: 1px;
   overflow: hidden;
-  font-size: 0.875rem;
-  height: 2.5625rem;
-  line-height: 2.5625rem;
+  font-size: 0.82353rem;
+  height: 2.41176rem;
+  line-height: 2.41176rem;
 }
 
 /* Adjust padding, alignment and radius if pre/post element is a button */
@@ -1382,7 +1382,7 @@ select::-ms-expand {
   padding-top: 0;
   padding-bottom: 0;
   text-align: center;
-  line-height: 2.125rem;
+  line-height: 2rem;
   border: none;
 }
 
@@ -1393,7 +1393,7 @@ select::-ms-expand {
   padding-top: 0;
   padding-bottom: 0;
   text-align: center;
-  line-height: 2.125rem;
+  line-height: 2rem;
   border: none;
 }
 
@@ -1475,10 +1475,10 @@ textarea {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   color: rgba(242, 114, 68, 0.75);
   display: block;
-  font-size: 1.125rem;
-  margin: 0 0 1rem 0;
-  padding: 0.5rem;
-  height: 2.5625rem;
+  font-size: 1.05882rem;
+  margin: 0 0 0.94118rem 0;
+  padding: 0.47059rem;
+  height: 2.41176rem;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1704,12 +1704,12 @@ select {
   background-position: 100% center;
   background-repeat: no-repeat;
   border: 1px solid #cccccc;
-  padding: 0.5rem;
-  font-size: 1.125rem;
+  padding: 0.47059rem;
+  font-size: 1.05882rem;
   color: rgba(242, 114, 68, 0.75);
   line-height: normal;
   border-radius: 0;
-  height: 2.5625rem;
+  height: 2.41176rem;
 }
 /* line 339, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 select.radius {
@@ -1732,15 +1732,15 @@ input[type="file"],
 input[type="checkbox"],
 input[type="radio"],
 select {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.94118rem 0;
 }
 
 /* line 483, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 input[type="checkbox"] + label,
 input[type="radio"] + label {
   display: inline-block;
-  margin-left: 0.5rem;
-  margin-right: 1rem;
+  margin-left: 0.47059rem;
+  margin-right: 0.94118rem;
   margin-bottom: 0;
   vertical-align: baseline;
 }
@@ -1756,26 +1756,26 @@ input[type="file"] {
 /* line 507, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 fieldset {
   border: 1px solid #DDDDDD;
-  padding: 1.25rem;
-  margin: 1.125rem 0;
+  padding: 1.17647rem;
+  margin: 1.05882rem 0;
 }
 /* line 269, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 fieldset legend {
   font-weight: bold;
   background: #FFFFFF;
-  padding: 0 0.1875rem;
+  padding: 0 0.17647rem;
   margin: 0;
-  margin-left: -0.1875rem;
+  margin-left: -0.17647rem;
 }
 
 /* Error Handling */
 /* line 514, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 [data-abide] .error small.error, [data-abide] .error span.error, [data-abide] span.error, [data-abide] small.error {
   display: block;
-  padding: 0.375rem 0.5625rem 0.5625rem;
+  padding: 0.35294rem 0.52941rem 0.52941rem;
   margin-top: -1px;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  margin-bottom: 0.94118rem;
+  font-size: 0.94118rem;
   font-weight: normal;
   font-style: normal;
   background: #f04124;
@@ -1789,10 +1789,10 @@ fieldset legend {
 /* line 520, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 span.error, small.error {
   display: block;
-  padding: 0.375rem 0.5625rem 0.5625rem;
+  padding: 0.35294rem 0.52941rem 0.52941rem;
   margin-top: -1px;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  margin-bottom: 0.94118rem;
+  font-size: 0.94118rem;
   font-weight: normal;
   font-style: normal;
   background: #f04124;
@@ -1808,7 +1808,7 @@ span.error, small.error {
 /* line 531, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 .error input[type="checkbox"],
 .error input[type="radio"] {
-  margin-bottom: 1rem;
+  margin-bottom: 0.94118rem;
 }
 /* line 536, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 .error label,
@@ -1818,10 +1818,10 @@ span.error, small.error {
 /* line 541, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 .error small.error {
   display: block;
-  padding: 0.375rem 0.5625rem 0.5625rem;
+  padding: 0.35294rem 0.52941rem 0.52941rem;
   margin-top: -1px;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  margin-bottom: 0.94118rem;
+  font-size: 0.94118rem;
   font-weight: normal;
   font-style: normal;
   background: #f04124;
@@ -1862,7 +1862,7 @@ label.error {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem;
+  max-width: 58.82353rem;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
 .row:before, .row:after {
@@ -1887,8 +1887,8 @@ label.error {
 /* line 228, ../bower_components/foundation/scss/foundation/components/_grid.scss */
 .row .row {
   width: auto;
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
+  margin-left: -0.88235rem;
+  margin-right: -0.88235rem;
   margin-top: 0;
   margin-bottom: 0;
   max-width: none;
@@ -1921,8 +1921,8 @@ label.error {
 /* line 233, ../bower_components/foundation/scss/foundation/components/_grid.scss */
 .column,
 .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0.88235rem;
+  padding-right: 0.88235rem;
   width: 100%;
   float: left;
 }
@@ -2110,8 +2110,8 @@ label.error {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.88235rem;
+    padding-right: 0.88235rem;
     float: left;
   }
 
@@ -2451,8 +2451,8 @@ label.error {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.88235rem;
+    padding-right: 0.88235rem;
     float: left;
   }
 
@@ -2960,8 +2960,8 @@ label.error {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.88235rem;
+    padding-right: 0.88235rem;
     float: left;
   }
 
@@ -3298,8 +3298,8 @@ label.error {
 }
 /* line 53, ../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
 .inline-list {
-  margin: 0 auto 1.0625rem auto;
-  margin-left: -1.375rem;
+  margin: 0 auto 1rem auto;
+  margin-left: -1.29412rem;
   margin-right: 0;
   padding: 0;
   list-style: none;
@@ -3309,7 +3309,7 @@ label.error {
 .inline-list > li {
   list-style: none;
   float: left;
-  margin-left: 1.375rem;
+  margin-left: 1.29412rem;
   display: block;
 }
 /* line 47, ../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
@@ -3320,7 +3320,7 @@ label.error {
 /* line 91, ../bower_components/foundation/scss/foundation/components/_labels.scss */
 .label {
   font-weight: normal;
-  font-family: "Anaheim", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -3328,8 +3328,8 @@ label.error {
   display: inline-block;
   position: relative;
   margin-bottom: inherit;
-  padding: 0.25rem 0.5rem 0.375rem;
-  font-size: 0.6875rem;
+  padding: 0.23529rem 0.47059rem 0.35294rem;
+  font-size: 0.64706rem;
   background-color: #f27244;
   color: #FFFFFF;
 }
@@ -3645,17 +3645,17 @@ p {
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.17647rem;
   text-rendering: optimizeLegibility;
 }
 /* line 242, ../bower_components/foundation/scss/foundation/components/_type.scss */
 p.lead {
-  font-size: 1.21875rem;
+  font-size: 1.20588rem;
   line-height: 1.6;
 }
 /* line 244, ../bower_components/foundation/scss/foundation/components/_type.scss */
 p aside {
-  font-size: 0.875rem;
+  font-size: 0.82353rem;
   line-height: 1.35;
   font-style: italic;
 }
@@ -3663,7 +3663,7 @@ p aside {
 /* Default header styles */
 /* line 252, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Syncopate", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #f27244;
@@ -3681,27 +3681,27 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 /* line 269, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.88235rem;
 }
 
 /* line 270, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h2 {
-  font-size: 1.6875rem;
+  font-size: 1.58824rem;
 }
 
 /* line 271, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h3 {
-  font-size: 1.375rem;
+  font-size: 1.29412rem;
 }
 
 /* line 272, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
 }
 
 /* line 273, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h5 {
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
 }
 
 /* line 274, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -3723,7 +3723,7 @@ hr {
   border: solid #DDDDDD;
   border-width: 1px 0 0;
   clear: both;
-  margin: 1.25rem 0 1.1875rem;
+  margin: 1.17647rem 0 1.11765rem;
   height: 0;
 }
 
@@ -3757,7 +3757,7 @@ code {
   border-width: 1px;
   border-style: solid;
   border-color: #dfdfdf;
-  padding: 0.125rem 0.3125rem 0.0625rem;
+  padding: 0.11765rem 0.29412rem 0.05882rem;
 }
 
 /* Lists */
@@ -3767,7 +3767,7 @@ ol,
 dl {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.17647rem;
   list-style-position: outside;
   font-family: inherit;
 }
@@ -3783,7 +3783,7 @@ ul.no-bullet {
 /* line 331, ../bower_components/foundation/scss/foundation/components/_type.scss */
 ul.no-bullet li ul,
 ul.no-bullet li ol {
-  margin-left: 1.25rem;
+  margin-left: 1.17647rem;
   margin-bottom: 0;
   list-style: none;
 }
@@ -3792,7 +3792,7 @@ ul.no-bullet li ol {
 /* line 344, ../bower_components/foundation/scss/foundation/components/_type.scss */
 ul li ul,
 ul li ol {
-  margin-left: 1.25rem;
+  margin-left: 1.17647rem;
   margin-bottom: 0;
 }
 /* line 353, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -3827,7 +3827,7 @@ ol {
 /* line 366, ../bower_components/foundation/scss/foundation/components/_type.scss */
 ol li ul,
 ol li ol {
-  margin-left: 1.25rem;
+  margin-left: 1.17647rem;
   margin-bottom: 0;
 }
 
@@ -3839,7 +3839,7 @@ dl dt {
 }
 /* line 380, ../bower_components/foundation/scss/foundation/components/_type.scss */
 dl dd {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.70588rem;
 }
 
 /* Abbreviations */
@@ -3861,14 +3861,14 @@ abbr {
 /* Blockquotes */
 /* line 397, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote {
-  margin: 0 0 1.25rem;
-  padding: 0.5625rem 1.25rem 0 1.1875rem;
+  margin: 0 0 1.17647rem;
+  padding: 0.52941rem 1.17647rem 0 1.11765rem;
   border-left: 1px solid #DDDDDD;
 }
 /* line 402, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite {
   display: block;
-  font-size: 0.8125rem;
+  font-size: 0.76471rem;
   color: #f5926f;
 }
 /* line 406, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -3892,9 +3892,9 @@ blockquote p {
 /* line 423, ../bower_components/foundation/scss/foundation/components/_type.scss */
 .vcard {
   display: inline-block;
-  margin: 0 0 1.25rem 0;
+  margin: 0 0 1.17647rem 0;
   border: 1px solid #DDDDDD;
-  padding: 0.625rem 0.75rem;
+  padding: 0.58824rem 0.70588rem;
 }
 /* line 429, ../bower_components/foundation/scss/foundation/components/_type.scss */
 .vcard li {
@@ -3904,7 +3904,7 @@ blockquote p {
 /* line 433, ../bower_components/foundation/scss/foundation/components/_type.scss */
 .vcard .fn {
   font-weight: bold;
-  font-size: 0.9375rem;
+  font-size: 0.88235rem;
 }
 
 /* line 440, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -3917,7 +3917,7 @@ blockquote p {
   text-decoration: none;
   font-weight: bold;
   border: none;
-  padding: 0 0.0625rem;
+  padding: 0 0.05882rem;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -3928,27 +3928,27 @@ blockquote p {
 
   /* line 454, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h1 {
-    font-size: 3.75rem;
+    font-size: 3.05882rem;
   }
 
   /* line 455, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h2 {
-    font-size: 2.3125rem;
+    font-size: 2.17647rem;
   }
 
   /* line 456, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h3 {
-    font-size: 1.6875rem;
+    font-size: 1.58824rem;
   }
 
   /* line 457, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h4 {
-    font-size: 1.4375rem;
+    font-size: 1.35294rem;
   }
 
   /* line 458, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h5 {
-    font-size: 1.125rem;
+    font-size: 1.05882rem;
   }
 
   /* line 459, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -4631,8 +4631,8 @@ th.hide-for-touch {
 
 /* line 96, ../scss/app.scss */
 #tagline {
-  position: absolute;
-  top: 59%;
+  position: relative;
+  top: 52%;
   left: 50%;
   margin-right: -50%;
   width: 30rem;
@@ -4796,7 +4796,7 @@ img {
 
 /* line 228, ../scss/app.scss */
 .intro {
-  font-family: "Anaheim", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
 /* line 233, ../scss/app.scss */
