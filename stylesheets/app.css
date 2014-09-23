@@ -4636,10 +4636,10 @@ th.hide-for-touch {
   left: 50%;
   margin-right: -50%;
   width: 30rem;
-  -ms-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -52%);
+  -moz-transform: translate(-50%, -52%);
+  -webkit-transform: translate(-50%, -52%);
+  transform: translate(-50%, -52%);
 }
 
 /* line 108, ../scss/app.scss */
