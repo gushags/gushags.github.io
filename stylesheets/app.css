@@ -4631,15 +4631,15 @@ th.hide-for-touch {
 
 /* line 96, ../scss/app.scss */
 #tagline {
-  position: relative;
-  top: 52%;
+  position: absolute;
+  top: 59%;
   left: 50%;
   margin-right: -50%;
   width: 30rem;
-  -ms-transform: translate(-50%, -52%);
-  -moz-transform: translate(-50%, -52%);
-  -webkit-transform: translate(-50%, -52%);
-  transform: translate(-50%, -52%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* line 108, ../scss/app.scss */
