@@ -37,20 +37,16 @@ $(function () {
 
 
 // Toggle hidden small logo
-var w = 1124;
-if ($(window).width() >= w) {
-	$(window).scroll(function() {    
-	    var h = $(window).height() - $("#header").height();
-		var scroll = $(window).scrollTop();
+$(window).scroll(function() {    
+    var h = $(window).height() - $("#header").height();
+	var scroll = $(window).scrollTop();
 
-	    if (scroll >= h) {
-	        $("#small-logo").addClass("show").removeClass("hide");
-	    } else {
-	        $("#small-logo").addClass("hide").removeClass("show");
-	    }
-	});
-};
-
+    if (scroll >= h) {
+        $("#small-logo").addClass("show").removeClass("hide");
+    } else {
+        $("#small-logo").addClass("hide").removeClass("show");
+    }
+});
 
 
 // Outdoor slider
