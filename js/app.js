@@ -50,32 +50,29 @@ $(window).scroll(function() {
 
 
 // Outdoor slider
-$('img.outdoor-img').load(function() {
-	var availWidthOut = $('.outdoor-img').outerWidth() -
-	                  $('.outdoor-mask').outerWidth();
-	new Dragdealer('outdoor-slider', {
-	  horizontal: true,
-	  vertical: false,
-	  xPrecision: availWidthOut,
-	  animationCallback: function(x, y) {
-	    $('.outdoor-img').css('margin-left', -x * availWidthOut);
-	  }
-	});
+var availWidthOut = $('.outdoor-img').outerWidth() -
+                  $('.outdoor-mask').outerWidth();
+new Dragdealer('outdoor-slider', {
+  horizontal: true,
+  vertical: false,
+  xPrecision: availWidthOut,
+  animationCallback: function(x, y) {
+    $('.outdoor-img').css('margin-left', -x * availWidthOut);
+  }
 });
 
 // Digital slider
-$('img.digital-img').load(function() {
-	var availWidthDig = $('.digital-img').outerWidth() -
-	                  $('.digital-mask').outerWidth();
-	new Dragdealer('digital-slider', {
-	  horizontal: true,
-	  vertical: false,
-	  xPrecision: availWidthDig,
-	  animationCallback: function(x, y) {
-	    $('.digital-img').css('margin-left', -x * availWidthDig);
-	  }
-	});
+var availWidthDig = $('.digital-img').outerWidth() -
+                  $('.digital-mask').outerWidth();
+new Dragdealer('digital-slider', {
+  horizontal: true,
+  vertical: false,
+  xPrecision: availWidthDig,
+  animationCallback: function(x, y) {
+    $('.digital-img').css('margin-left', -x * availWidthDig);
+  }
 });
+
 
 // TV slider
 var availWidthTV = 2610 -
@@ -90,18 +87,15 @@ new Dragdealer('tv-slider', {
 });
 
 // Print and Collateral slider
-
-$('img.print-img').load(function() {
-	var availWidthPrint = $('.print-img').outerWidth() -
-	                  $('.print-mask').outerWidth();
-	new Dragdealer('print-slider', {
-	  horizontal: true,
-	  vertical: false,
-	  xPrecision: availWidthPrint,
-	  animationCallback: function(x, y) {
-	    $('.print-img').css('margin-left', -x * availWidthPrint);
-	  }
-	});
+var availWidthPrint = $('.print-img').outerWidth() -
+                  $('.print-mask').outerWidth();
+new Dragdealer('print-slider', {
+  horizontal: true,
+  vertical: false,
+  xPrecision: availWidthPrint,
+  animationCallback: function(x, y) {
+    $('.print-img').css('margin-left', -x * availWidthPrint);
+  }
 });
 
 // Only play videos if visible
