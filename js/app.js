@@ -16,7 +16,7 @@ $(document).ready(function(){
 $(function () {
     $('.header').stickyNavbar({
     activeClass: "active",          // Class to be added to highlight nav elements
-    sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
+    sectionSelector: "scrollto",   // Class of the section that is interconnected with nav links
     animDuration: 350,              // Duration of jQuery animation
     startAt: 0,                     // Stick the menu at XXXpx from the top of the this() (nav container)
     easing: "linear",               // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
@@ -130,5 +130,25 @@ function checkScroll() {
 
 }
 
+// Set 100% height by Jquery
+$(document).ready(function(){
+	$('#home-page').css('height', $(window).height());
+
+	    // Continuously set the height of the window when screen resizes
+	    $(window).resize(function() {
+	        var theHeight = $(window).height();
+	        $('#home-page').css('height', theHeight);
+	});
+});
+
 window.addEventListener('scroll', checkScroll, false);
 window.addEventListener('resize', checkScroll, false);
+
+// When ready...
+window.addEventListener("load",function() {
+    // Set a timeout...
+    setTimeout(function(){
+        // Hide the address bar!
+        window.scrollTo(0, 1);
+    }, 0);
+});
