@@ -4903,11 +4903,6 @@ h1 {
   margin: 10px 0 10px 0;
 }
 
-/* line 324, ../scss/app.scss */
-.outdoor-mask, .digital-mask, .print-mask div {
-  position: relative;
-}
-
 /* line 334, ../scss/app.scss */
 .tv-img {
   display: inline;
@@ -4928,16 +4923,16 @@ h1 {
   padding-right: 5px;
 }
 
-/* line 349, ../scss/app.scss */
-.outdoor-img .dca-img {
+/* line 350, ../scss/app.scss */
+.outdoor-img {
   height: 300px;
   width: 1636px;
   background-image: url("../img/outdoor_sm.jpg");
   background-size: 100% 100%;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 349, ../scss/app.scss */
-  .outdoor-img .dca-img {
+  /* line 350, ../scss/app.scss */
+  .outdoor-img {
     height: 600px;
     width: 3231px;
     background-image: url("../img/outdoor.jpg");
@@ -4945,6 +4940,38 @@ h1 {
 }
 
 /* line 362, ../scss/app.scss */
+.digital-img {
+  height: 300px;
+  width: 1962px;
+  background-image: url("../img/digital_sm.jpg");
+  background-size: 100% 100%;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 362, ../scss/app.scss */
+  .digital-img {
+    height: 600px;
+    width: 3880px;
+    background-image: url("../img/digital.jpg");
+  }
+}
+
+/* line 374, ../scss/app.scss */
+.print-img {
+  height: 300px;
+  width: 2147px;
+  background-image: url("../img/print_sm.jpg");
+  background-size: 100% 100%;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 374, ../scss/app.scss */
+  .print-img {
+    height: 600px;
+    width: 4223px;
+    background-image: url("../img/print.jpg");
+  }
+}
+
+/* line 387, ../scss/app.scss */
 .icon-scroll {
   background: url(../img/icon-scroll-down.svg) no-repeat left top;
   width: 22px;
@@ -4955,12 +4982,12 @@ h1 {
   margin-left: -11px;
 }
 
-/* line 372, ../scss/app.scss */
+/* line 397, ../scss/app.scss */
 .position {
   position: absolute;
 }
 
-/* line 376, ../scss/app.scss */
+/* line 401, ../scss/app.scss */
 .floating {
   animation-name: floating;
   -webkit-animation-name: floating;
@@ -5020,141 +5047,141 @@ h1 {
     -ms-transform: translateY(0%);
   }
 }
-/* line 440, ../scss/app.scss */
+/* line 465, ../scss/app.scss */
 label {
   font-size: 1.25rem;
   color: #f27244;
 }
 
-/* line 445, ../scss/app.scss */
+/* line 470, ../scss/app.scss */
 input[type="text"],
 input[type="email"],
 textarea {
   border: 1px solid #f27244;
 }
 
-/* line 451, ../scss/app.scss */
+/* line 476, ../scss/app.scss */
 ::-webkit-input-placeholder {
   /* WebKit browsers */
   color: rgba(242, 114, 68, 0.6);
 }
 
-/* line 454, ../scss/app.scss */
+/* line 479, ../scss/app.scss */
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: rgba(242, 114, 68, 0.6);
   opacity: 1;
 }
 
-/* line 458, ../scss/app.scss */
+/* line 483, ../scss/app.scss */
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgba(242, 114, 68, 0.6);
   opacity: 1;
 }
 
-/* line 462, ../scss/app.scss */
+/* line 487, ../scss/app.scss */
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: rgba(242, 114, 68, 0.6);
 }
 
-/* line 466, ../scss/app.scss */
+/* line 491, ../scss/app.scss */
 #form-button {
   float: right;
 }
 
-/* line 471, ../scss/app.scss */
+/* line 496, ../scss/app.scss */
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 472, ../scss/app.scss */
+/* line 497, ../scss/app.scss */
 input:focus:-moz-placeholder {
   color: transparent;
 }
 
 /* FF 4-18 */
-/* line 473, ../scss/app.scss */
+/* line 498, ../scss/app.scss */
 input:focus::-moz-placeholder {
   color: transparent;
 }
 
 /* FF 19+ */
-/* line 474, ../scss/app.scss */
+/* line 499, ../scss/app.scss */
 input:focus::-ms-placeholder {
   color: transparent;
 }
 
 /* IE Explorer */
-/* line 476, ../scss/app.scss */
+/* line 501, ../scss/app.scss */
 textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 477, ../scss/app.scss */
+/* line 502, ../scss/app.scss */
 textarea:focus:-moz-placeholder {
   color: transparent;
 }
 
 /* FF 4-18 */
-/* line 478, ../scss/app.scss */
+/* line 503, ../scss/app.scss */
 textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
 /* FF 19+ */
-/* line 479, ../scss/app.scss */
+/* line 504, ../scss/app.scss */
 textarea:focus::-ms-placeholder {
   color: transparent;
 }
 
 /* IE Explorer */
-/* line 483, ../scss/app.scss */
+/* line 508, ../scss/app.scss */
 #thank-button {
   color: #f6d7b7;
   border: 1px solid #f6d7b7;
   margin-top: 1rem;
 }
 
-/* line 489, ../scss/app.scss */
+/* line 514, ../scss/app.scss */
 .light-orange h3 {
   color: #f6d7b7;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
 
-/* line 495, ../scss/app.scss */
+/* line 520, ../scss/app.scss */
 .light-orange h6 {
   color: #f6d7b7;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 500, ../scss/app.scss */
+  /* line 525, ../scss/app.scss */
   #footer img {
     width: 18rem;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 506, ../scss/app.scss */
+  /* line 531, ../scss/app.scss */
   #footer img {
     width: 40rem;
   }
 }
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  /* line 512, ../scss/app.scss */
+  /* line 537, ../scss/app.scss */
   #footer img {
     width: 62rem;
   }
 }
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
-  /* line 518, ../scss/app.scss */
+  /* line 543, ../scss/app.scss */
   #footer img {
     width: 90rem;
   }
 }
 @media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
-  /* line 524, ../scss/app.scss */
+  /* line 549, ../scss/app.scss */
   #footer img {
     width: 115rem;
   }
