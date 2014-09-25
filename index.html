@@ -4,10 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zephre - Unexpected advertising</title>
+	<!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
+	<!--[if IE]><link rel="shortcut icon" href="img/icon/favicon.ico"><![endif]-->
+
+	<!-- IE 10+ "Metro" Tiles - 144x144 pixels in size -->
+	<meta name="msapplication-TileColor" content="white">
+	<meta name="msapplication-TileImage" content="img/icon/tileicon.png">
+
+	<!-- Touch Icons - iOS and Android 2.1+ 152x152 pixels in size. --> 
+	<link rel="apple-touch-icon-precomposed" href="img/icon/apple-touch-icon-precomposed.png">
+
+	<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 96x96 pixels in size. -->
+	<link rel="icon" href="img/icon/favicon.png">
     <link rel="stylesheet" href="stylesheets/app.css" />
 	<link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans:700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="bower_components/stickyNavbar.js/animate.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
-    <script src="bower_components/modernizr/modernizr.js"></script>
+	<!-- <link rel="stylesheet" href="bower_components/stickyNavbar.js/animate.min.css" type="text/css" media="screen" title="no title" charset="utf-8"> -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <!-- <script src="bower_components/modernizr/modernizr.js"></script> -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	
   </head>
   <body>
 	  
@@ -279,12 +294,11 @@
 		</div>
 	</div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-	<script src="bower_components/foundation/js/foundation/foundation.abide.js" type="text/javascript" charset="utf-8"></script>
-	<script src="bower_components/foundation/js/foundation/foundation.interchange.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.1/js/foundation.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.1/js/foundation/foundation.abide.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/dragdealer.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="bower_components/stickyNavbar.js/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="bower_components/stickyNavbar.js/jquery.stickyNavbar.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/app.js"></script>
   </body>
