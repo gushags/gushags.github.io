@@ -1,10 +1,6 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
-$(document).foundation({
-"magellan-expedition": {
-  fixed_top: 25, // top distance in pixels assigned to the fixed element on scroll
-}
-});
+$(document).foundation();
 
 $(document).ready(function(){
 	var delay = setTimeout(function(){
@@ -16,66 +12,27 @@ $(document).ready(function(){
 	     }, 2000);
 });
 
-
-
-// Waypoints js
-$(document).ready(function(){
-	$('#header').waypoint('sticky', {
-		offset: 32,
-	    handler: function(dir) {
-			var stick = $('#header').hasClass('stuck');
-			if (stick) {
-				$('.sticky-wrapper').addClass('stuck');
-				$('.sticky-wrapper').css({'top':'0'});
-			} else {
-				$('.sticky-wrapper').removeClass('stuck');
-				$('.sticky-wrapper').css({'top':'95%'});
-			}
-	    }
-	});
+// StickyNavbar code
+$(function () {
+    $('.header').stickyNavbar({
+    activeClass: "active",          // Class to be added to highlight nav elements
+    sectionSelector: "scrollto",   // Class of the section that is interconnected with nav links
+    animDuration: 1100,              // Duration of jQuery animation
+    startAt: 0,                     // Stick the menu at XXXpx from the top of the this() (nav container)
+    easing: "jswing",               // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
+    animateCSS: false,               // AnimateCSS effect on/off
+    animateCSSRepeat: false,        // Repeat animation everytime user scrolls
+    cssAnimation: "fadeInDown",     // AnimateCSS class that will be added to selector
+    jqueryEffects: true,           // jQuery animation on/off
+    jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
+    selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
+    mobile: false,                  // If false nav will not stick under 480px width of window
+    mobileWidth: 1024,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
+    zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
+    stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
+    unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
+  });
 });
-
-
-// Smooth scrolling to the various pages and highlighted nav
-$(document).ready(function () {
-    $(document).on("scroll", onScroll);
-    
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-      
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 1000, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
-});
-
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('#nav a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#nav ul li a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-}
 
 
 // Toggle hidden small logo
@@ -91,6 +48,7 @@ $(window).scroll(function() {
         $("#small-logo").addClass("hide").removeClass("show");
 		$("#face-head").addClass("hide").removeClass("show");
 		$("#twit-head").addClass("hide").removeClass("show");
+		$("#header").css({'top':'95%'});
     }
 });
 
