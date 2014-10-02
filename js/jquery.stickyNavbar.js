@@ -66,79 +66,79 @@
 			/* Smooth scrolling to the desired section: get clicked href attribute, measure offset from top and then animate  */
 			/* v1.0.3: Fix for overlapping content by navigation */
 			/* If we first first time or we get back to home substract thisHeight 2 times */
-			var clicks = 0;
-
-			/* Smooth scrolling logic */
-			menuItems.click(function(e) {
-				/* v1.1.2: Ignore external links and just let them open - pull request #15 by Globegitter */
-				var href = $(this).attr("href");
-				if (href.substring(0, 4) === 'http' || href.substring(0, 7) === 'mailto:') {
-					return true;
-				}
-
-				/* Get index of clicked nav link */
-
-				var index = menuItems.index(this),
-					section = href; // Get href attr of clicked nav link
-
-				/* On every nav link click increment counter */
-				++clicks;
-
-				/* If user click on first link (home) reset counter */
-				if (index === "0") {
-					clicks = 0;
-				}
-
-				/* Prevent default click behaviour */
-				e.preventDefault();
-
-				/* v1.0.5: Inaccurate scrolling fix */
-				/* v1.1.0: Added animation duration and easing */
-				/* If it is first click and we are left 1st section and want to go downward then add 'this' height just once */
-				if (clicks === 1 && ($self.offset().top > $selfScrollTop)) {
-
-					$("html, body").animate({
-						scrollTop: $(section).offset().top - thisHeight + 2 + 'px'
-					}, {
-						duration: options.animDuration,
-						easing: options.easing
-					});
-
-					/* v1.0.3: Overlapping fix */
-					/* If it is first click after page load or we are at the top of the page or user return back on home: Then add 'this' height 2 times to fix overlapping */
-				} else if (clicks === 1 || $self.offset().top === $selfScrollTop || index === 0) {
-
-					$("html, body").animate({
-						scrollTop: $(section).offset().top - 2 * thisHeight + 2 + 'px'
-					}, {
-						duration: options.animDuration,
-						easing: options.easing
-					});
-
-					/* v1.0.5: Inaccurate scrolling fix */
-					/* If it is second click and we are scrolling upwards then add 'this' height just once */
-				} else if (clicks === 2 && ($self.offset().top < $selfScrollTop)) {
-
-					$("html, body").animate({
-						scrollTop: $(section).offset().top + 2 + 'px'
-					}, {
-						duration: options.animDuration,
-						easing: options.easing
-					});
-
-					/* Else add 'this' height just once */
-				} else {
-
-					$("html, body").animate({
-						scrollTop: $(section).offset().top - thisHeight + 2 + 'px'
-					}, {
-						duration: options.animDuration,
-						easing: options.easing
-					});
-
-				} // Smooth scrolling logic End
-
-			}); // menuItems.click(function(e) END
+			// var clicks = 0;
+//
+// 			/* Smooth scrolling logic */
+// 			menuItems.click(function(e) {
+// 				/* v1.1.2: Ignore external links and just let them open - pull request #15 by Globegitter */
+// 				var href = $(this).attr("href");
+// 				if (href.substring(0, 4) === 'http' || href.substring(0, 7) === 'mailto:') {
+// 					return true;
+// 				}
+//
+// 				/* Get index of clicked nav link */
+//
+// 				var index = menuItems.index(this),
+// 					section = href; // Get href attr of clicked nav link
+//
+// 				/* On every nav link click increment counter */
+// 				++clicks;
+//
+// 				/* If user click on first link (home) reset counter */
+// 				if (index === "0") {
+// 					clicks = 0;
+// 				}
+//
+// 				/* Prevent default click behaviour */
+// 				e.preventDefault();
+//
+// 				/* v1.0.5: Inaccurate scrolling fix */
+// 				/* v1.1.0: Added animation duration and easing */
+// 				/* If it is first click and we are left 1st section and want to go downward then add 'this' height just once */
+// 				if (clicks === 1 && ($self.offset().top > $selfScrollTop)) {
+//
+// 					$("html, body").animate({
+// 						scrollTop: $(section).offset().top - thisHeight + 2 + 'px'
+// 					}, {
+// 						duration: options.animDuration,
+// 						easing: options.easing
+// 					});
+//
+// 					/* v1.0.3: Overlapping fix */
+// 					/* If it is first click after page load or we are at the top of the page or user return back on home: Then add 'this' height 2 times to fix overlapping */
+// 				} else if (clicks === 1 || $self.offset().top === $selfScrollTop || index === 0) {
+//
+// 					$("html, body").animate({
+// 						scrollTop: $(section).offset().top - 2 * thisHeight + 2 + 'px'
+// 					}, {
+// 						duration: options.animDuration,
+// 						easing: options.easing
+// 					});
+//
+// 					/* v1.0.5: Inaccurate scrolling fix */
+// 					/* If it is second click and we are scrolling upwards then add 'this' height just once */
+// 				} else if (clicks === 2 && ($self.offset().top < $selfScrollTop)) {
+//
+// 					$("html, body").animate({
+// 						scrollTop: $(section).offset().top + 2 + 'px'
+// 					}, {
+// 						duration: options.animDuration,
+// 						easing: options.easing
+// 					});
+//
+// 					/* Else add 'this' height just once */
+// 				} else {
+//
+// 					$("html, body").animate({
+// 						scrollTop: $(section).offset().top - thisHeight + 2 + 'px'
+// 					}, {
+// 						duration: options.animDuration,
+// 						easing: options.easing
+// 					});
+//
+// 				} // Smooth scrolling logic End
+//
+// 			}); // menuItems.click(function(e) END
 
 
 			/* v1.1.0: Main function, then on bottom called window.scroll, ready and resize */
@@ -166,9 +166,9 @@
 
 					if ((windowPosition >= top) && (windowPosition <= bottom)) {
 						if (options.selector === "a") {
-							$self.find('li a[href~="#' + this.id + '"]').addClass(options.activeClass);
+							$self.find('li a[name~="#' + this.id + '"]').addClass(options.activeClass);
 						} else {
-							$self.find('li a[href~="#' + this.id + '"]').parent().addClass(options.activeClass);
+							$self.find('li a[name~="#' + this.id + '"]').parent().addClass(options.activeClass);
 						}
 					}
 				});
