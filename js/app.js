@@ -10,7 +10,7 @@ var delay = setTimeout(function(){
 	        $("#tagline").removeClass("hide-initial").addClass("fade-in");
 			$("#icon-scroll-down").removeClass("hide-initial").addClass("fade-in");
 			$("#nav-buttons").removeClass("hide-initial").addClass("fade-in");
-     }, 1500);
+     }, 500);
 
 // StickyNavbar code
 $(function () {
