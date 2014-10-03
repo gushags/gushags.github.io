@@ -4,13 +4,13 @@ $(document).foundation();
 
 
 // Hiding and showing icons
-var delay = setTimeout(function(){
-	        $("#face").removeClass("hide-initial").addClass("fade-in");
-			$("#twit").removeClass("hide-initial").addClass("fade-in");
-	        $("#tagline").removeClass("hide-initial").addClass("fade-in");
-			$("#icon-scroll-down").removeClass("hide-initial").addClass("fade-in");
-			$("#nav-buttons").removeClass("hide-initial").addClass("fade-in");
-     }, 500);
+// var delay = setTimeout(function(){
+// 	        $("#face").removeClass("hide-initial").addClass("fade-in");
+// 			$("#twit").removeClass("hide-initial").addClass("fade-in");
+// 	        $("#tagline").removeClass("hide-initial").addClass("fade-in");
+// 			$("#icon-scroll-down").removeClass("hide-initial").addClass("fade-in");
+// 			$("#nav-buttons").removeClass("hide-initial").addClass("fade-in");
+//      }, 500);
 
 // StickyNavbar code
 $(function () {
