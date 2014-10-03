@@ -84,23 +84,19 @@ $(window).scroll(function() {
     }
 });
 
-// Lazy load images
-$("div.lazy").lazyload({
-    effect : "fadeIn"
-});
-
-    
 
 // Outdoor slider
-var availWidthOut = $('.outdoor-img').outerWidth() -
-                  $('.outdoor-mask').outerWidth();
-new Dragdealer('outdoor-slider', {
-  horizontal: true,
-  vertical: false,
-  xPrecision: availWidthOut,
-  animationCallback: function(x, y) {
-    $('.outdoor-img').css('margin-left', -x * availWidthOut);
-  }
+$('.outdoor-img').on('load', function(){
+	var availWidthOut = $('.outdoor-img').outerWidth() -
+	                  $('.outdoor-mask').outerWidth();
+	new Dragdealer('outdoor-slider', {
+	  horizontal: true,
+	  vertical: false,
+	  xPrecision: availWidthOut,
+	  animationCallback: function(x, y) {
+	    $('.outdoor-img').css('margin-left', -x * availWidthOut);
+	  }
+	});
 });
 
 // Digital slider
