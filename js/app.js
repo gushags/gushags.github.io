@@ -86,6 +86,12 @@ $(window).scroll(function() {
     }
 });
 
+// Lazy load images
+$("div.lazy").lazyload({
+    effect : "fadeIn"
+});
+
+    
 
 // Outdoor slider
 var availWidthOut = $('.outdoor-img').outerWidth() -
@@ -164,9 +170,7 @@ function onScroll() {
 }
 
 var throttled = _.debounce(onScroll, 200);
+
 $(window).scroll(throttled);
 $(window).resize(throttled);
 
-
-// window.addEventListener('scroll', onScroll, false);
-// window.addEventListener('resize', onScroll, false);
