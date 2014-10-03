@@ -11,7 +11,7 @@ $(document).ready(function(){
 	        $("#tagline").removeClass("hide-initial").addClass("fade-in");
 			$("#icon-scroll-down").removeClass("hide-initial").addClass("fade-in");
 			$("#nav-buttons").removeClass("hide-initial").addClass("fade-in");
-	     }, 2000);
+	     }, 1000);
 });
 
 // StickyNavbar code
