@@ -86,18 +86,17 @@ $(window).scroll(function() {
 
 
 // Outdoor slider
-$('.outdoor-img').on('load', function(){
-	var availWidthOut = $('.outdoor-img').outerWidth() -
-	                  $('.outdoor-mask').outerWidth();
-	new Dragdealer('outdoor-slider', {
-	  horizontal: true,
-	  vertical: false,
-	  xPrecision: availWidthOut,
-	  animationCallback: function(x, y) {
-	    $('.outdoor-img').css('margin-left', -x * availWidthOut);
-	  }
-	});
+var availWidthOut = $('.outdoor-img').outerWidth() -
+                  $('.outdoor-mask').outerWidth();
+new Dragdealer('outdoor-slider', {
+  horizontal: true,
+  vertical: false,
+  xPrecision: availWidthOut,
+  animationCallback: function(x, y) {
+    $('.outdoor-img').css('margin-left', -x * availWidthOut);
+  }
 });
+
 
 // Digital slider
 var availWidthDig = $('.digital-img').outerWidth() -
