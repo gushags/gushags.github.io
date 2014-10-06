@@ -5193,33 +5193,8 @@ textarea:focus::-ms-placeholder {
   color: #f6d7b7;
 }
 
-@media only screen and (max-width: 40em) {
-  /* line 552, ../scss/app.scss */
-  #footer img {
-    width: 18rem;
-  }
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 558, ../scss/app.scss */
-  #footer img {
-    width: 40rem;
-  }
-}
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  /* line 564, ../scss/app.scss */
-  #footer img {
-    width: 62rem;
-  }
-}
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {
-  /* line 570, ../scss/app.scss */
-  #footer img {
-    width: 90rem;
-  }
-}
-@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
-  /* line 576, ../scss/app.scss */
-  #footer img {
-    width: 115rem;
-  }
+/* line 581, ../scss/app.scss */
+#footer img {
+  width: 100%;
+  height: auto;
 }
