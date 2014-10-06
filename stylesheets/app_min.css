@@ -168,6 +168,14 @@ select.error{margin-bottom:0;}
 .row:after{clear:both;}
 .column,
 .columns{padding-left:0.88235rem;padding-right:0.88235rem;width:100%;float:left;}
+.column.large-centered,
+.columns.large-centered{margin-left:auto;margin-right:auto;float:none;}
+.column.large-centered:last-child,
+.columns.large-centered:last-child{float:none;}
+.column.small-centered,
+.columns.small-centered{margin-left:auto;margin-right:auto;float:none;}
+.column.small-centered:last-child,
+.columns.small-centered:last-child{float:none;}
 @media only screen{
 .column,
 .columns{position:relative;padding-left:0.88235rem;padding-right:0.88235rem;float:left;}
