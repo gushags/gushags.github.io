@@ -431,16 +431,15 @@ textarea:focus::-ms-placeholder{color:transparent;}
 #jel{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -1951px;}
 #kraft{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -2146px;}
 @media only screen and (max-width:40em){
-#dca{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 0;}
-#qs{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -121px;}
-#isu{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -241px;}
-#ruan{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -361px;}
-#mcd{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -481px;}
-#coop{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -601px;}
-#prin{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -721px;}
-#pig{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -841px;}
-#mmm{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -961px;}
-#scot{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -1081px;}
-#jel{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -1201px;}
-#kraft{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -1321px;}
-}
+#dca{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 0;background-size:95%;}
+#qs{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 -121px;background-size:95%;}
+#isu{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 -241px;background-size:95%;}
+#ruan{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 -355px;background-size:95%;}
+#mcd{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 -479px;background-size:95%;}
+#coop{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 -590px;background-size:95%;}
+#prin{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 -695px;background-size:95%;}
+#pig{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 -810px;background-size:95%;}
+#mmm{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 -920px;background-size:95%;}
+#scot{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 -1037px;background-size:95%;}
+#jel{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 -1138px;background-size:95%;}
+#kraft{width:120px;height:120px;background:url(../img/logos/logos.jpg) 0 -1250px;background-size:95%;}
