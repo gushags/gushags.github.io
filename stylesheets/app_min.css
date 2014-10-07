@@ -418,29 +418,29 @@ textarea:focus::-ms-placeholder{color:transparent;}
 .light-orange h3{color:#f6d7b7;margin-top:2.5rem;margin-bottom:1rem;}
 .light-orange h6{color:#f6d7b7;}
 #footer img{width:100%;height:auto;}
-#dca{width:195px;height:195px;background:url(../img/logos/logos.png) 0 0;}
-#qs{width:195px;height:195px;background:url(../img/logos/logos.png) 0 -196px;}
-#isu{width:195px;height:195px;background:url(../img/logos/logos.png) 0 -391px;}
-#ruan{width:195px;height:195px;background:url(../img/logos/logos.png) 0 -586px;}
-#mcd{width:195px;height:195px;background:url(../img/logos/logos.png) 0 -781px;}
-#coop{width:195px;height:195px;background:url(../img/logos/logos.png) 0 -976px;}
-#prin{width:195px;height:195px;background:url(../img/logos/logos.png) 0 -1171px;}
-#pig{width:195px;height:195px;background:url(../img/logos/logos.png) 0 -1366px;}
-#mmm{width:195px;height:195px;background:url(../img/logos/logos.png) 0 -1561px;}
-#scot{width:195px;height:195px;background:url(../img/logos/logos.png) 0 -1756px;}
-#jel{width:195px;height:195px;background:url(../img/logos/logos.png) 0 -1951px;}
-#kraft{width:195px;height:195px;background:url(../img/logos/logos.png) 0 -2146px;}
+#dca{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 0;}
+#qs{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -196px;}
+#isu{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -391px;}
+#ruan{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -586px;}
+#mcd{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -781px;}
+#coop{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -976px;}
+#prin{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -1171px;}
+#pig{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -1366px;}
+#mmm{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -1561px;}
+#scot{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -1756px;}
+#jel{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -1951px;}
+#kraft{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -2146px;}
 @media only screen and (max-width:40em){
-#dca{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 0;}
-#qs{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 -121px;}
-#isu{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 -241px;}
-#ruan{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 -361px;}
-#mcd{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 -481px;}
-#coop{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 -601px;}
-#prin{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 -721px;}
-#pig{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 -841px;}
-#mmm{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 -961px;}
-#scot{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 -1081px;}
-#jel{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 -1201px;}
-#kraft{width:120px;height:120px;background:url(../img/logos/logos_sm.png) 0 -1321px;}
+#dca{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 0;}
+#qs{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -121px;}
+#isu{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -241px;}
+#ruan{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -361px;}
+#mcd{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -481px;}
+#coop{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -601px;}
+#prin{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -721px;}
+#pig{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -841px;}
+#mmm{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -961px;}
+#scot{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -1081px;}
+#jel{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -1201px;}
+#kraft{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -1321px;}
 }
