@@ -431,16 +431,16 @@ textarea:focus::-ms-placeholder{color:transparent;}
 #jel{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -1951px;}
 #kraft{width:195px;height:195px;background:url(../img/logos/logos.jpg) 0 -2146px;}
 @media only screen and (max-width:40em){
-#dca{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 0;}
-#qs{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -121px;}
-#isu{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -241px;}
-#ruan{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -361px;}
-#mcd{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -481px;}
-#coop{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -601px;}
-#prin{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -721px;}
-#pig{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -841px;}
-#mmm{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -961px;}
-#scot{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -1081px;}
-#jel{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -1201px;}
-#kraft{width:120px;height:120px;background:url(../img/logos/logos_sm.jpg) 0 -1321px;}
+#dca{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 0;}
+#qs{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -121px;}
+#isu{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -241px;}
+#ruan{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -361px;}
+#mcd{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -481px;}
+#coop{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -601px;}
+#prin{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -721px;}
+#pig{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -841px;}
+#mmm{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -961px;}
+#scot{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -1081px;}
+#jel{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -1201px;}
+#kraft{width:120px;height:120px;background:url(../img/logos/logos_sm.svg) 0 -1321px;}
 }
