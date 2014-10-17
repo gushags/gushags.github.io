@@ -3,7 +3,7 @@
 
 // jquery.stickynavbar.js
 ;
-(function($, window, document) {
+(function($, document) {
 
 	'use strict';
 
@@ -196,7 +196,7 @@
 
 		}); // return this.each end
 	}; // $.fn.stickyNavbar end
-})(jQuery, window, document); // document ready end
+})(jQuery, document); // document ready end
 
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
