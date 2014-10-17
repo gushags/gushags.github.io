@@ -191,7 +191,7 @@
 			}
 
 			$(window).scroll(mainFunc); // scroll fn end
-			$(window).ready(mainFunc);
+			$(document).ready(mainFunc);
 			$(window).resize(mainFunc);
 
 		}); // return this.each end
