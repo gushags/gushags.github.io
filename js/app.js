@@ -219,7 +219,6 @@ $(function () {
     stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
     unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
   });
-  alert('StickyNavBar loaded NOW');
 });
 
 
